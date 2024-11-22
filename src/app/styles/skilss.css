@@ -1,0 +1,71 @@
+.skills-container{
+    padding-top: 8rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.skilss-heading{
+    font-weight: inherit;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1;
+}
+.skilss-text{
+    color: #6b7289;
+    padding-top: 0.5rem;
+    margin: 0;
+}
+.skills-icons-grid {
+    display: flex;          /* Flexbox layout */
+    justify-content: space-between;  /* Items ke beech mein space */
+    gap: 20px;  /* Items ke beech mein space */
+    font-size: 2.25rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.skilss-space{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.skilss-space h2{
+     color: #08e95e;
+     font-weight: inherit;
+     font-size: inherit;
+     margin: 0;
+}
+/*responsive style*/
+@media (max-width: 1024px) {
+    .skills-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.skilss-heading{
+    font-size: 2.25rem;
+}
+.skills-icons-grid{
+    font-size: 2rem;
+}
+@media(max-width:768px) {
+    .skills-grid{
+        grid-template-columns: 1fr ;
+        gap: 2rem;
+    }
+}
+.skilss-heading{
+    font-size: 1.875rem;
+}
+.skills-icons-grid{
+    font-size: 1.75rem;
+}
+.skills-left{
+    text-align: center;
+}
